@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataVoyager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DataVoyager</h1>
+        <p>"Uma Nova Janela para seus Dados"</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Controles</h2>
+                <div class="control-group">
+                    <label for="index-select">Índice do OpenSearch:</label>
+                    <select id="index-select">
+                        <option value="corpus_historico">corpus_historico</option>
+                        <option value="feedback_clientes">feedback_clientes</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="field-select">Campo de Texto:</label>
+                    <select id="field-select">
+                        <option value="corpo_texto">corpo_texto</option>
+                        <option value="comentarios">comentarios</option>
+                    </select>
+                </div>
+                <button id="analyze-btn">Analisar</button>
+            </div>
+            <div class="dashboard">
+                <div class="widget" id="summary">
+                    <h3>Summary</h3>
+                    <div id="summary-content"></div>
+                </div>
+                <div class="widget" id="cirrus">
+                    <h3>Cirrus (Nuvem de Palavras)</h3>
+                    <div id="cirrus-content"></div>
+                </div>
+                <div class="widget" id="trends">
+                    <h3>Trends</h3>
+                    <div id="trends-content"></div>
+                </div>
+                <div class="widget" id="contexts">
+                    <h3>Contexts</h3>
+                    <div id="contexts-content"></div>
+                </div>
+                <div class="widget" id="collocates">
+                    <h3>Collocates</h3>
+                    <div id="collocates-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
